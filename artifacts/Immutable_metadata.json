@@ -6,8 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_myUint",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
-				"name": "MY_ADDRESS",
+				"name": "myAddr",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -20,7 +31,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "MY_UINT",
+				"name": "myUint",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -45,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/constants.sol": "Constants"
+			"contract/constants.sol": "Immutable"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
